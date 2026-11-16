@@ -1,0 +1,1231 @@
+{
+ "method_version": "ratio-sum-count-solar-two_part-v3",
+ "estimator": "sum",
+ "built_utc": "2026-11-16T01:55:00Z",
+ "source": "NASA FIRMS country yearly CSVs, https://firms.modaps.eosdis.nasa.gov/country/",
+ "coverage": {
+  "modis_first": "2000-10-31",
+  "modis_last": "2025-12-31",
+  "modis_rows_kept": 1604248,
+  "viirs_first": "2012-01-20",
+  "viirs_last": "2025-12-31",
+  "viirs_rows_kept": 2550467,
+  "aqua_first": "2002-07-04",
+  "terra_last": "2025-12-31",
+  "aqua_last": "2025-12-31",
+  "viirs_first_full_month": "2012-02",
+  "viirs_last_full_month": "2025-12",
+  "aqua_first_full_month": "2002-08"
+ },
+ "filters": {
+  "type": 0,
+  "modis_confidence_min": 30,
+  "viirs_confidence": [
+   "n",
+   "h"
+  ]
+ },
+ "params": {
+  "grid_deg": 0.1,
+  "viirs_dedupe_deg": 0.01,
+  "ratio_region_deg": 0.5,
+  "fallbacks": [
+   "0.5deg x season",
+   "2deg x season",
+   "national x season",
+   "all"
+  ],
+  "min_modis_per_sample": 5,
+  "min_samples": 8,
+  "bootstrap": 300,
+  "bounds": "5th-95th percentile of bootstrap median"
+ },
+ "national_ratio_by_season": {
+  "JJA": 1.842590306036627,
+  "SON": 1.7139111393855466,
+  "DJF": 1.7176700848629574,
+  "MAM": 2.0432388078383377
+ },
+ "national_ratio_all": 1.7921911898333416,
+ "validation": {
+  "train_years": [
+   2012,
+   2019
+  ],
+  "test_years": [
+   2020,
+   2025
+  ],
+  "region_month_0p5deg": {
+   "median_ratio_region_season": {
+    "n": 38079,
+    "MAE": 7.12600648907002,
+    "RMSE": 19.704640434564645,
+    "bias": -1.1382744054319451,
+    "bias_pct": -6.064725573452635,
+    "spearman": 0.7454674822538055,
+    "peak_month_agreement": 0.6559287183002056
+   },
+   "sum_ratio_region_season": {
+    "n": 38079,
+    "MAE": 7.354872700795375,
+    "RMSE": 22.296074745958837,
+    "bias": 0.9719664905832145,
+    "bias_pct": 5.178637070155454,
+    "spearman": 0.7440418481509388,
+    "peak_month_agreement": 0.6572995202193284
+   },
+   "two_part_ratio_plus_zero": {
+    "n": 38079,
+    "MAE": 6.70694571115333,
+    "RMSE": 20.688128104382773,
+    "bias": 0.37329675686995606,
+    "bias_pct": 1.9889249701762783,
+    "spearman": 0.7682842865792676,
+    "peak_month_agreement": 0.6620973269362577
+   },
+   "sum_ratio_scan_weighted": {
+    "n": 38079,
+    "MAE": 8.597999024180332,
+    "RMSE": 29.250992929046554,
+    "bias": 1.7099881268264225,
+    "bias_pct": 9.11081605065977,
+    "spearman": 0.7368555154103422,
+    "peak_month_agreement": 0.6267991775188485
+   },
+   "sum_ratio_aqua_only": {
+    "n": 38079,
+    "MAE": 8.429517909860735,
+    "RMSE": 23.582335848853628,
+    "bias": 1.4050779959249018,
+    "bias_pct": 7.486254996085655,
+    "spearman": 0.7356783985390278,
+    "peak_month_agreement": 0.6220013708019191
+   },
+   "quantile_mapping": {
+    "n": 38079,
+    "MAE": 7.587196364534049,
+    "RMSE": 30.28603608138403,
+    "bias": -2.581805085079309,
+    "bias_pct": -13.755856452916346,
+    "spearman": 0.7513411330412153,
+    "peak_month_agreement": 0.6435915010281015
+   },
+   "single_national_ratio": {
+    "n": 38079,
+    "MAE": 7.420873210606798,
+    "RMSE": 21.441113397353195,
+    "bias": -2.6622153724760222,
+    "bias_pct": -14.184282431763219,
+    "spearman": 0.7403187114401698,
+    "peak_month_agreement": 0.6686086360520904
+   },
+   "raw_modis_unscaled": {
+    "n": 38079,
+    "MAE": 9.75852832269755,
+    "RMSE": 30.835090902358232,
+    "bias": -9.059087686126212,
+    "bias_pct": -48.266815541153164,
+    "spearman": 0.7403187114401698,
+    "peak_month_agreement": 0.6686086360520904
+   }
+  },
+  "aoi_monthly": {
+   "Rio Negro": {
+    "median_ratio_region_season": {
+     "n": 72,
+     "MAE": 166.4926901614987,
+     "RMSE": 189.1764084207091,
+     "bias": -165.97071044368565,
+     "bias_pct": -43.91404950736942,
+     "spearman": 0.8701985691292826,
+     "peak_month_agreement": 0.5
+    },
+    "sum_ratio_region_season": {
+     "n": 72,
+     "MAE": 88.47529713180003,
+     "RMSE": 115.22795757711789,
+     "bias": -13.15143383507622,
+     "bias_pct": -3.479726723965485,
+     "spearman": 0.8492804888950489,
+     "peak_month_agreement": 0.3333333333333333
+    },
+    "two_part_ratio_plus_zero": {
+     "n": 72,
+     "MAE": 70.80916559302877,
+     "RMSE": 92.27548133313579,
+     "bias": -35.46477875410573,
+     "bias_pct": -9.38359573091141,
+     "spearman": 0.8738966155965183,
+     "peak_month_agreement": 0.5
+    },
+    "sum_ratio_scan_weighted": {
+     "n": 72,
+     "MAE": 108.21475269229742,
+     "RMSE": 146.03972665097095,
+     "bias": -1.0801200557550672,
+     "bias_pct": -0.2857880494427636,
+     "spearman": 0.8060615806170933,
+     "peak_month_agreement": 0.6666666666666666
+    },
+    "sum_ratio_aqua_only": {
+     "n": 72,
+     "MAE": 114.43391857733114,
+     "RMSE": 156.51692783798816,
+     "bias": -28.30691326521186,
+     "bias_pct": -7.489702172186,
+     "spearman": 0.7785674090563403,
+     "peak_month_agreement": 0.3333333333333333
+    },
+    "quantile_mapping": {
+     "n": 72,
+     "MAE": 101.19879957800505,
+     "RMSE": 158.48030385070422,
+     "bias": -67.77996781679406,
+     "bias_pct": -17.933844196711643,
+     "spearman": 0.8049360882140214,
+     "peak_month_agreement": 0.3333333333333333
+    },
+    "raw_modis_unscaled": {
+     "n": 72,
+     "MAE": 245.30555555555554,
+     "RMSE": 266.9569253643741,
+     "bias": -245.30555555555554,
+     "bias_pct": -64.90518888725563,
+     "spearman": 0.8663359593025696,
+     "peak_month_agreement": 0.6666666666666666
+    }
+   },
+   "Chaco": {
+    "median_ratio_region_season": {
+     "n": 72,
+     "MAE": 377.9268139185781,
+     "RMSE": 644.2038839849354,
+     "bias": 124.14907714522987,
+     "bias_pct": 4.658404845873836,
+     "spearman": 0.9858670312392573,
+     "peak_month_agreement": 0.6666666666666666
+    },
+    "sum_ratio_region_season": {
+     "n": 72,
+     "MAE": 346.72765234313306,
+     "RMSE": 618.8842197784602,
+     "bias": 196.16858700080786,
+     "bias_pct": 7.36076914388806,
+     "spearman": 0.9873623282890528,
+     "peak_month_agreement": 0.6666666666666666
+    },
+    "two_part_ratio_plus_zero": {
+     "n": 72,
+     "MAE": 323.09494968175517,
+     "RMSE": 578.4537955054604,
+     "bias": 158.62226945693345,
+     "bias_pct": 5.951931062985558,
+     "spearman": 0.9873944852148547,
+     "peak_month_agreement": 0.6666666666666666
+    },
+    "sum_ratio_scan_weighted": {
+     "n": 72,
+     "MAE": 394.18019993038354,
+     "RMSE": 726.0463585996241,
+     "bias": 264.56854981101424,
+     "bias_pct": 9.927318372763246,
+     "spearman": 0.9869121313278241,
+     "peak_month_agreement": 0.6666666666666666
+    },
+    "sum_ratio_aqua_only": {
+     "n": 72,
+     "MAE": 459.5000105272372,
+     "RMSE": 925.5720463719189,
+     "bias": 290.42984176818146,
+     "bias_pct": 10.89770309526019,
+     "spearman": 0.9762360319615432,
+     "peak_month_agreement": 0.8333333333333334
+    },
+    "quantile_mapping": {
+     "n": 72,
+     "MAE": 413.4703699668702,
+     "RMSE": 1027.8683361307808,
+     "bias": -246.36076862875376,
+     "bias_pct": -9.244113809004538,
+     "spearman": 0.986831739013319,
+     "peak_month_agreement": 0.6666666666666666
+    },
+    "raw_modis_unscaled": {
+     "n": 72,
+     "MAE": 1061.6527777777778,
+     "RMSE": 1621.5705906791586,
+     "bias": -1061.6527777777778,
+     "bias_pct": -39.83604677826187,
+     "spearman": 0.9864055503618888,
+     "peak_month_agreement": 0.8333333333333334
+    }
+   },
+   "Argentina": {
+    "median_ratio_region_season": {
+     "n": 72,
+     "MAE": 1265.1425353308452,
+     "RMSE": 1579.7990476794198,
+     "bias": -602.0048761728201,
+     "bias_pct": -6.064725573452636,
+     "spearman": 0.9848543314682618,
+     "peak_month_agreement": 1.0
+    },
+    "sum_ratio_region_season": {
+     "n": 72,
+     "MAE": 1044.1857693992054,
+     "RMSE": 1904.8204865935913,
+     "bias": 514.048777707197,
+     "bias_pct": 5.178637070155448,
+     "spearman": 0.9907389542735869,
+     "peak_month_agreement": 1.0
+    },
+    "two_part_ratio_plus_zero": {
+     "n": 72,
+     "MAE": 921.0624292713796,
+     "RMSE": 1656.094905425848,
+     "bias": 442.9692994965665,
+     "bias_pct": 4.462567240302561,
+     "spearman": 0.9915428644928937,
+     "peak_month_agreement": 1.0
+    },
+    "sum_ratio_scan_weighted": {
+     "n": 72,
+     "MAE": 1368.010301405621,
+     "RMSE": 2711.122265570897,
+     "bias": 904.3699705753247,
+     "bias_pct": 9.110816050659773,
+     "spearman": 0.9886487877033895,
+     "peak_month_agreement": 1.0
+    },
+    "sum_ratio_aqua_only": {
+     "n": 72,
+     "MAE": 1339.3837713404153,
+     "RMSE": 2313.6139650640566,
+     "bias": 743.1106250947832,
+     "bias_pct": 7.4862549960856635,
+     "spearman": 0.9771367933629174,
+     "peak_month_agreement": 1.0
+    },
+    "quantile_mapping": {
+     "n": 72,
+     "MAE": 1622.214844485823,
+     "RMSE": 3366.9145857900444,
+     "bias": -1365.4521643713201,
+     "bias_pct": -13.755856452916351,
+     "spearman": 0.9822175059489358,
+     "peak_month_agreement": 0.8333333333333334
+    },
+    "raw_modis_unscaled": {
+     "n": 72,
+     "MAE": 4791.125,
+     "RMSE": 6307.24512520676,
+     "bias": -4791.125,
+     "bias_pct": -48.266815541153164,
+     "spearman": 0.9890025081998843,
+     "peak_month_agreement": 1.0
+    }
+   }
+  },
+  "notes": [],
+  "fallback_levels_used_in_test": {
+   "r05": 699,
+   "nat": 1262,
+   "r2": 2156
+  },
+  "step_check_national": {
+   "pre_years": [
+    2010,
+    2011
+   ],
+   "post_years": [
+    2013,
+    2014
+   ],
+   "harmonized_post_over_pre": 0.7796643543329317,
+   "raw_modis_post_over_pre": 0.7377367470744218,
+   "step_artifact_factor": 1.0568327488426983
+  },
+  "step_check_aoi": {
+   "Rio Negro": {
+    "pre_years": [
+     2010,
+     2011
+    ],
+    "post_years": [
+     2013,
+     2014
+    ],
+    "harmonized_post_over_pre": 1.3475528024577115,
+    "raw_modis_post_over_pre": 1.3798107255520504,
+    "step_artifact_factor": 0.9766214869206551
+   },
+   "Chaco": {
+    "pre_years": [
+     2010,
+     2011
+    ],
+    "post_years": [
+     2013,
+     2014
+    ],
+    "harmonized_post_over_pre": 0.7323583351086823,
+    "raw_modis_post_over_pre": 0.694622885368413,
+    "step_artifact_factor": 1.0543250885266402
+   }
+  }
+ },
+ "validation_noaa20": {
+  "train_years": [
+   2018,
+   2022
+  ],
+  "test_years": [
+   2023,
+   2025
+  ],
+  "region_month_0p5deg": {
+   "n20_ratio_region_season": {
+    "n": 19758,
+    "MAE": 3.0764331135429175,
+    "RMSE": 6.049974920948934,
+    "bias": 0.10143533180583916,
+    "bias_pct": 0.8000955270948024,
+    "spearman": 0.8180245838893323,
+    "peak_month_agreement": 0.759245283018868
+   },
+   "raw_n20_unscaled": {
+    "n": 19758,
+    "MAE": 2.974440732867699,
+    "RMSE": 5.847424883744079,
+    "bias": 0.28277153558052437,
+    "bias_pct": 2.2304283604135895,
+    "spearman": 0.8242077816957861
+   }
+  },
+  "aoi_monthly": {
+   "Rio Negro": {
+    "n20_ratio_region_season": {
+     "n": 36,
+     "MAE": 41.36936284033561,
+     "RMSE": 58.92394299146341,
+     "bias": 22.23289605931049,
+     "bias_pct": 6.275554791713797,
+     "spearman": 0.9155727155727155
+    },
+    "raw_n20_unscaled": {
+     "n": 36,
+     "MAE": 37.5,
+     "RMSE": 54.62498410882047,
+     "bias": 22.166666666666668,
+     "bias_pct": 6.256860592755214,
+     "spearman": 0.9222651222651224
+    }
+   },
+   "Chaco": {
+    "n20_ratio_region_season": {
+     "n": 36,
+     "MAE": 109.5508366976721,
+     "RMSE": 208.58909071569562,
+     "bias": 5.101861720303629,
+     "bias_pct": 0.28753682436428496,
+     "spearman": 0.9828174291540137
+    },
+    "raw_n20_unscaled": {
+     "n": 36,
+     "MAE": 111.91666666666667,
+     "RMSE": 220.23819176317062,
+     "bias": 3.3055555555555554,
+     "bias_pct": 0.18629845325317804,
+     "spearman": 0.9797284272813451
+    }
+   },
+   "Argentina": {
+    "n20_ratio_region_season": {
+     "n": 36,
+     "MAE": 349.16675013155213,
+     "RMSE": 712.7364850489489,
+     "bias": 55.67109127277186,
+     "bias_pct": 0.8000955270948089,
+     "spearman": 0.9760617760617762
+    },
+    "raw_n20_unscaled": {
+     "n": 36,
+     "MAE": 371.02777777777777,
+     "RMSE": 775.2831561579435,
+     "bias": 155.19444444444446,
+     "bias_pct": 2.2304283604135895,
+     "spearman": 0.9727155727155729
+    }
+   }
+  }
+ },
+ "scan_model": {
+  "b1": -0.47133155048637193,
+  "b2": 0.030325605177676435,
+  "weight_cap": 4.0
+ },
+ "date_mode": "solar",
+ "modis_weight": "count",
+ "zero_model": {
+  "type": "two_part",
+  "regions": 1204,
+  "share_rows": 32334,
+  "levels": {
+   "r05": 3446,
+   "r2": 1356,
+   "nat": 14
+  },
+  "applies_to": "months before the S-NPP overlap where a 0.5-degree region has no MODIS detection"
+ },
+ "noaa20": {
+  "first": "2018-04-01",
+  "last": "2025-12-31",
+  "rows_kept": 1514894
+ },
+ "point_years": [
+  2000,
+  2001,
+  2002,
+  2003,
+  2004,
+  2005,
+  2006,
+  2007,
+  2008,
+  2009,
+  2010,
+  2011,
+  2012,
+  2013,
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "last_date": "2025-12-31",
+ "last_month": "2025-12",
+ "nrt_rows": {
+  "modis": 0,
+  "viirs": 0,
+  "n20": 0
+ },
+ "aoi_annual": {
+  "Rio Negro": [
+   {
+    "y": 2000,
+    "harmonized": 3729.552748849622,
+    "low": 2824.1835760995855,
+    "high": 4809.755076448641,
+    "modis": 1092,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2001,
+    "harmonized": 20923.497202237162,
+    "low": 17236.98264920735,
+    "high": 25576.317684192727,
+    "modis": 6311,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2002,
+    "harmonized": 8990.884594646257,
+    "low": 7252.040796055403,
+    "high": 11119.810312925814,
+    "modis": 3124,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2003,
+    "harmonized": 9037.56720264618,
+    "low": 7451.83785721612,
+    "high": 10949.842869779792,
+    "modis": 4858,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2004,
+    "harmonized": 4412.1504240584245,
+    "low": 3514.571896704293,
+    "high": 5556.484723777596,
+    "modis": 1524,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2005,
+    "harmonized": 5285.833133529115,
+    "low": 4293.339653806727,
+    "high": 6493.550639428805,
+    "modis": 2713,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2006,
+    "harmonized": 3438.58711056542,
+    "low": 2787.4800617097503,
+    "high": 4245.700657333778,
+    "modis": 1547,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2007,
+    "harmonized": 3882.3249507196506,
+    "low": 3042.9260775638822,
+    "high": 4954.566650181788,
+    "modis": 1214,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2008,
+    "harmonized": 3129.6101016587622,
+    "low": 2462.6385598545285,
+    "high": 3982.8226626484043,
+    "modis": 1153,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2009,
+    "harmonized": 1998.5538179676173,
+    "low": 1591.336007020131,
+    "high": 2521.8598218946486,
+    "modis": 762,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2010,
+    "harmonized": 1834.8876949266185,
+    "low": 1431.1662046553274,
+    "high": 2361.245163075406,
+    "modis": 554,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2011,
+    "harmonized": 2469.2108082428067,
+    "low": 1980.688896386693,
+    "high": 3127.129923906276,
+    "modis": 1031,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2012,
+    "harmonized": 2437.187712294267,
+    "low": 2351.5351479428246,
+    "high": 2564.17530110119,
+    "modis": 909,
+    "viirs": 2094,
+    "viirs_px": 2916
+   },
+   {
+    "y": 2013,
+    "harmonized": 2715.0,
+    "low": 2715.0,
+    "high": 2715.0,
+    "modis": 975,
+    "viirs": 2715,
+    "viirs_px": 4059
+   },
+   {
+    "y": 2014,
+    "harmonized": 3085.0,
+    "low": 3085.0,
+    "high": 3085.0,
+    "modis": 1212,
+    "viirs": 3085,
+    "viirs_px": 5487
+   },
+   {
+    "y": 2015,
+    "harmonized": 6227.0,
+    "low": 6227.0,
+    "high": 6227.0,
+    "modis": 3375,
+    "viirs": 6227,
+    "viirs_px": 12053
+   },
+   {
+    "y": 2016,
+    "harmonized": 9266.0,
+    "low": 9266.0,
+    "high": 9266.0,
+    "modis": 5629,
+    "viirs": 9266,
+    "viirs_px": 24254
+   },
+   {
+    "y": 2017,
+    "harmonized": 11983.0,
+    "low": 11983.0,
+    "high": 11983.0,
+    "modis": 7278,
+    "viirs": 11983,
+    "viirs_px": 30110
+   },
+   {
+    "y": 2018,
+    "harmonized": 6737.0,
+    "low": 6737.0,
+    "high": 6737.0,
+    "modis": 3673,
+    "viirs": 6737,
+    "viirs_px": 13303
+   },
+   {
+    "y": 2019,
+    "harmonized": 7287.0,
+    "low": 7287.0,
+    "high": 7287.0,
+    "modis": 2737,
+    "viirs": 7287,
+    "viirs_px": 13582
+   },
+   {
+    "y": 2020,
+    "harmonized": 5844.0,
+    "low": 5844.0,
+    "high": 5844.0,
+    "modis": 2054,
+    "viirs": 5844,
+    "viirs_px": 10110
+   },
+   {
+    "y": 2021,
+    "harmonized": 4334.0,
+    "low": 4334.0,
+    "high": 4334.0,
+    "modis": 1568,
+    "viirs": 4334,
+    "viirs_px": 7344
+   },
+   {
+    "y": 2022,
+    "harmonized": 4316.0,
+    "low": 4316.0,
+    "high": 4316.0,
+    "modis": 1442,
+    "viirs": 4316,
+    "viirs_px": 6875
+   },
+   {
+    "y": 2023,
+    "harmonized": 4006.0,
+    "low": 4006.0,
+    "high": 4006.0,
+    "modis": 1513,
+    "viirs": 4006,
+    "viirs_px": 6656
+   },
+   {
+    "y": 2024,
+    "harmonized": 3556.0,
+    "low": 3556.0,
+    "high": 3556.0,
+    "modis": 965,
+    "viirs": 3556,
+    "viirs_px": 5251
+   },
+   {
+    "y": 2025,
+    "harmonized": 5878.0,
+    "low": 5878.0,
+    "high": 5878.0,
+    "modis": 2397,
+    "viirs": 5878,
+    "viirs_px": 11966
+   }
+  ],
+  "Chaco": [
+   {
+    "y": 2000,
+    "harmonized": 640.1193404053081,
+    "low": 532.2308507464015,
+    "high": 783.3274312820481,
+    "modis": 192,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2001,
+    "harmonized": 35564.44777215363,
+    "low": 30446.33255747013,
+    "high": 42818.38290721816,
+    "modis": 6908,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2002,
+    "harmonized": 16800.506549019952,
+    "low": 15045.143992763022,
+    "high": 18995.175006495905,
+    "modis": 9230,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2003,
+    "harmonized": 58952.432538249675,
+    "low": 53528.28249954745,
+    "high": 65851.60914957592,
+    "modis": 34641,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2004,
+    "harmonized": 40203.105959983106,
+    "low": 36248.99259566275,
+    "high": 45318.62738364946,
+    "modis": 23946,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2005,
+    "harmonized": 25067.920937015027,
+    "low": 22683.720793577308,
+    "high": 28186.92094808699,
+    "modis": 15503,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2006,
+    "harmonized": 30242.54822071138,
+    "low": 27433.6565302557,
+    "high": 33881.27123481738,
+    "modis": 18346,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2007,
+    "harmonized": 36178.44332714554,
+    "low": 33002.38265361529,
+    "high": 40244.490319254044,
+    "modis": 22760,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2008,
+    "harmonized": 43278.782129780855,
+    "low": 39390.98833444603,
+    "high": 48344.87531896347,
+    "modis": 26811,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2009,
+    "harmonized": 32915.64365079091,
+    "low": 29898.022008750453,
+    "high": 36784.86607642871,
+    "modis": 21284,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2010,
+    "harmonized": 26410.522774155997,
+    "low": 24008.734646382774,
+    "high": 29493.446064301035,
+    "modis": 17368,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2011,
+    "harmonized": 33501.40543990418,
+    "low": 30597.363935345304,
+    "high": 37255.56794295633,
+    "modis": 21705,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2012,
+    "harmonized": 30727.537492871954,
+    "low": 30316.949217723286,
+    "high": 31402.19550479288,
+    "modis": 17688,
+    "viirs": 27910,
+    "viirs_px": 50720
+   },
+   {
+    "y": 2013,
+    "harmonized": 26304.0,
+    "low": 26304.0,
+    "high": 26304.0,
+    "modis": 16249,
+    "viirs": 26304,
+    "viirs_px": 49394
+   },
+   {
+    "y": 2014,
+    "harmonized": 17573.0,
+    "low": 17573.0,
+    "high": 17573.0,
+    "modis": 10892,
+    "viirs": 17573,
+    "viirs_px": 33452
+   },
+   {
+    "y": 2015,
+    "harmonized": 17682.0,
+    "low": 17682.0,
+    "high": 17682.0,
+    "modis": 10120,
+    "viirs": 17682,
+    "viirs_px": 31911
+   },
+   {
+    "y": 2016,
+    "harmonized": 22928.0,
+    "low": 22928.0,
+    "high": 22928.0,
+    "modis": 14557,
+    "viirs": 22928,
+    "viirs_px": 41578
+   },
+   {
+    "y": 2017,
+    "harmonized": 24755.0,
+    "low": 24755.0,
+    "high": 24755.0,
+    "modis": 15621,
+    "viirs": 24755,
+    "viirs_px": 44620
+   },
+   {
+    "y": 2018,
+    "harmonized": 20440.0,
+    "low": 20440.0,
+    "high": 20440.0,
+    "modis": 11557,
+    "viirs": 20440,
+    "viirs_px": 34755
+   },
+   {
+    "y": 2019,
+    "harmonized": 21552.0,
+    "low": 21552.0,
+    "high": 21552.0,
+    "modis": 14105,
+    "viirs": 21552,
+    "viirs_px": 40538
+   },
+   {
+    "y": 2020,
+    "harmonized": 66947.0,
+    "low": 66947.0,
+    "high": 66947.0,
+    "modis": 39611,
+    "viirs": 66947,
+    "viirs_px": 126357
+   },
+   {
+    "y": 2021,
+    "harmonized": 21799.0,
+    "low": 21799.0,
+    "high": 21799.0,
+    "modis": 13611,
+    "viirs": 21799,
+    "viirs_px": 38921
+   },
+   {
+    "y": 2022,
+    "harmonized": 29990.0,
+    "low": 29990.0,
+    "high": 29990.0,
+    "modis": 17820,
+    "viirs": 29990,
+    "viirs_px": 57298
+   },
+   {
+    "y": 2023,
+    "harmonized": 22576.0,
+    "low": 22576.0,
+    "high": 22576.0,
+    "modis": 14411,
+    "viirs": 22576,
+    "viirs_px": 42695
+   },
+   {
+    "y": 2024,
+    "harmonized": 20610.0,
+    "low": 20610.0,
+    "high": 20610.0,
+    "modis": 14259,
+    "viirs": 20610,
+    "viirs_px": 37942
+   },
+   {
+    "y": 2025,
+    "harmonized": 17454.0,
+    "low": 17454.0,
+    "high": 17454.0,
+    "modis": 10754,
+    "viirs": 17454,
+    "viirs_px": 30892
+   }
+  ],
+  "Argentina": [
+   {
+    "y": 2000,
+    "harmonized": 21702.31948591082,
+    "low": 17422.89059645104,
+    "high": 27329.24227202097,
+    "modis": 6936,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2001,
+    "harmonized": 129097.17410843511,
+    "low": 107985.75976831422,
+    "high": 157615.84871113693,
+    "modis": 29793,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2002,
+    "harmonized": 111515.59430467963,
+    "low": 96486.93179486785,
+    "high": 131087.12222726442,
+    "modis": 57491,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2003,
+    "harmonized": 192328.40995189585,
+    "low": 171153.73444935662,
+    "high": 218905.67772251432,
+    "modis": 110987,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2004,
+    "harmonized": 174273.5232534295,
+    "low": 154991.79316726676,
+    "high": 199161.71686082735,
+    "modis": 94941,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2005,
+    "harmonized": 116757.21617453577,
+    "low": 103482.24140965109,
+    "high": 133438.35305713158,
+    "modis": 67113,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2006,
+    "harmonized": 145693.31580960573,
+    "low": 129766.15136429892,
+    "high": 166403.46590918308,
+    "modis": 79816,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2007,
+    "harmonized": 127435.39508390817,
+    "low": 114280.67078159933,
+    "high": 143912.07588073556,
+    "modis": 73978,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2008,
+    "harmonized": 182413.41250698685,
+    "low": 162139.72160706512,
+    "high": 208550.64929308847,
+    "modis": 98979,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2009,
+    "harmonized": 132814.06100662716,
+    "low": 118428.9975121746,
+    "high": 150934.14665273798,
+    "modis": 78027,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2010,
+    "harmonized": 100123.88652537545,
+    "low": 89579.6423266927,
+    "high": 113388.63779425665,
+    "modis": 59426,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2011,
+    "harmonized": 122835.58588942903,
+    "low": 110170.75929378005,
+    "high": 138636.3298119846,
+    "modis": 72941,
+    "viirs": 0,
+    "viirs_px": 0
+   },
+   {
+    "y": 2012,
+    "harmonized": 109416.34040385952,
+    "low": 107916.41891277271,
+    "high": 111536.12015506711,
+    "modis": 58276,
+    "viirs": 101910,
+    "viirs_px": 169182
+   },
+   {
+    "y": 2013,
+    "harmonized": 116345.0,
+    "low": 116345.0,
+    "high": 116345.0,
+    "modis": 63110,
+    "viirs": 116345,
+    "viirs_px": 210338
+   },
+   {
+    "y": 2014,
+    "harmonized": 64570.0,
+    "low": 64570.0,
+    "high": 64570.0,
+    "modis": 34542,
+    "viirs": 64570,
+    "viirs_px": 108469
+   },
+   {
+    "y": 2015,
+    "harmonized": 83688.0,
+    "low": 83688.0,
+    "high": 83688.0,
+    "modis": 42485,
+    "viirs": 83688,
+    "viirs_px": 136392
+   },
+   {
+    "y": 2016,
+    "harmonized": 93704.0,
+    "low": 93704.0,
+    "high": 93704.0,
+    "modis": 52987,
+    "viirs": 93704,
+    "viirs_px": 162934
+   },
+   {
+    "y": 2017,
+    "harmonized": 100007.0,
+    "low": 100007.0,
+    "high": 100007.0,
+    "modis": 57026,
+    "viirs": 100007,
+    "viirs_px": 180489
+   },
+   {
+    "y": 2018,
+    "harmonized": 98522.0,
+    "low": 98522.0,
+    "high": 98522.0,
+    "modis": 49988,
+    "viirs": 98522,
+    "viirs_px": 165571
+   },
+   {
+    "y": 2019,
+    "harmonized": 87034.0,
+    "low": 87034.0,
+    "high": 87034.0,
+    "modis": 45671,
+    "viirs": 87034,
+    "viirs_px": 143376
+   },
+   {
+    "y": 2020,
+    "harmonized": 221877.0,
+    "low": 221877.0,
+    "high": 221877.0,
+    "modis": 113716,
+    "viirs": 221877,
+    "viirs_px": 400944
+   },
+   {
+    "y": 2021,
+    "harmonized": 102691.0,
+    "low": 102691.0,
+    "high": 102691.0,
+    "modis": 51674,
+    "viirs": 102691,
+    "viirs_px": 170504
+   },
+   {
+    "y": 2022,
+    "harmonized": 139638.0,
+    "low": 139638.0,
+    "high": 139638.0,
+    "modis": 70944,
+    "viirs": 139638,
+    "viirs_px": 271393
+   },
+   {
+    "y": 2023,
+    "harmonized": 81857.0,
+    "low": 81857.0,
+    "high": 81857.0,
+    "modis": 44091,
+    "viirs": 81857,
+    "viirs_px": 147162
+   },
+   {
+    "y": 2024,
+    "harmonized": 80061.0,
+    "low": 80061.0,
+    "high": 80061.0,
+    "modis": 45451,
+    "viirs": 80061,
+    "viirs_px": 134622
+   },
+   {
+    "y": 2025,
+    "harmonized": 88572.0,
+    "low": 88572.0,
+    "high": 88572.0,
+    "modis": 43859,
+    "viirs": 88572,
+    "viirs_px": 149091
+   }
+  ]
+ }
+}

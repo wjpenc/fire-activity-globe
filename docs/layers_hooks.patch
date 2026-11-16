@@ -1,0 +1,174 @@
+--- web/app.js	2026-11-16 01:59:43.935959000 +0000
++++ web/app.js	2026-11-16 02:19:15.937551941 +0000
+@@ -1,5 +1,6 @@
+ // Vendored libraries so the demo runs offline
+ import { Plot, d3, parquetReadObjects } from "./vendor/libs.js";
++import * as LAYERS from "./layers.js";  // burned area + admin boundaries
+ 
+ // ---------------------------------------------------------------- i18n
+ const I18N = {
+@@ -165,6 +166,7 @@
+ }
+ function aoiTest() {
+   if (mode() === "country") return () => true;  // country files already hold only that country
++  if (mode() === "region") return LAYERS.regionTest();  // layers: province or department
+   if (mode() === "poly") {
+     const P = POLY.slice();
+     return P.length >= 3 ? (lat, lon) => inPoly(lat, lon, P) : () => false;
+@@ -181,7 +183,7 @@
+   };
+ }
+ function aoiGeojson() {
+-  if (!SEL || mode() === "country") return { type: "FeatureCollection", features: [] };
++  if (!SEL || mode() === "country" || mode() === "region") return { type: "FeatureCollection", features: [] };
+   if (mode() === "poly") {
+     const ring = POLY.length ? [...POLY, POLY[0]] : [];
+     return { type: "Feature", geometry: { type: ring.length >= 4 ? "Polygon" : "LineString", coordinates: ring.length >= 4 ? [ring] : ring } };
+@@ -230,6 +232,7 @@
+     },
+   });
+   map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-left");
++  if (new URLSearchParams(location.search).has("debug")) window.__map = map;  // for headless tests
+   const tileErr = { bm: 0, osm: 0 };  // hide a basemap after repeated tile failures
+   map.on("error", e => { if (e.sourceId in tileErr && ++tileErr[e.sourceId] >= 6 && map.getLayer(e.sourceId)) map.setLayoutProperty(e.sourceId, "visibility", "none"); });
+   let ll = map.getCenter();  // bottom bar: cursor position and zoom
+@@ -269,6 +272,9 @@
+     map.on("mouseleave", "country-fill", () => { map.getCanvas().style.cursor = ""; });
+     map.moveLayer("sel-line");  // selected country's border above the dots
+     setupDraw();
++    LAYERS.initLayers({ map, d3, Plot, readParquet, t, fmt, download, toCsv, exportPng, exportSvg, aoiLabel,  // layers
++      lang: () => lang, refresh: () => update(), isWhole: () => mode() === "country", isRegion: () => mode() === "region", panelRight, onRegion,
++      legendHot: on => { document.querySelector(".legend:not(.legend-burn)").hidden = !on; } });
+     res();
+   }; map.isStyleLoaded() ? ready() : map.on("styledata", ready); });
+ }
+@@ -335,6 +341,7 @@
+     }
+     if (!picking) {
+       if (drawing || Date.now() - lastDraw < 500) return;
++      if (LAYERS.handleClick(e)) return;  // layers: province or department click
+       const f = map.queryRenderedFeatures(e.point, { layers: ["country-fill"] })[0];
+       if (f && f.properties.name !== COUNTRIES[SEL]?.geo) chooseCountry(f.properties.name);
+       return;
+@@ -358,7 +365,7 @@
+   if (!SEL) return renderGlobal();
+   map.getSource("global").setData({ type: "FeatureCollection", features: [] });
+   $("global-view").hidden = true; $("country-view").hidden = false;
+-  $("panel-sub").textContent = `${COUNTRIES[SEL].name} · ${mode() === "country" ? t("wholeCountry") : aoiLabel().replace(/_/g, " ")} · ${$("d0").value} → ${$("d1").value}`;
++  $("panel-sub").textContent = `${COUNTRIES[SEL].name} · ${mode() === "country" ? t("wholeCountry") : mode() === "region" ? LAYERS.region()?.name ?? "–" : aoiLabel().replace(/_/g, " ")} · ${$("d0").value} → ${$("d1").value}`;
+   const inAoi = aoiTest(), k0 = ym($("d0").value), k1 = ym($("d1").value);
+   const agg = new Map(), cellTot = new Map();
+   for (let i = 0; i < CAL.n; i++) {
+@@ -393,6 +400,7 @@
+     properties: { h: c.h, c: col(c.h), lat: c.lat, lon: c.lon } })) });
+   render();
+   status(rows.length ? t("ready") : t("noData"));
++  await LAYERS.onUpdate({ key: SEL, k0, k1, inAoi });  // layers: burned area map + card
+ }
+ 
+ const BA_STYLE = () => [["harmonized", null, 2.8], ["modisRaw", "6,3", 1.6], ["viirsRaw", "2,3", 1.6], ["viirsFcd", "10,3,2,3", 1.6]];
+@@ -496,6 +504,7 @@
+ function aoiLabel() {
+   if (!SEL) return "world";
+   if (mode() === "country") return COUNTRIES[SEL].name.replace(/ /g, "_");
++  if (mode() === "region") return `${COUNTRIES[SEL].name.replace(/ /g, "_")}_${LAYERS.regionLabel()}`;  // layers
+   if (mode() === "poly") {
+     const lats = POLY.map(p => p[1]), lons = POLY.map(p => p[0]);
+     return `poly${POLY.length}_${Math.min(...lats).toFixed(2)}_${Math.max(...lats).toFixed(2)}_${Math.min(...lons).toFixed(2)}_${Math.max(...lons).toFixed(2)}`;
+@@ -677,6 +686,7 @@
+   }).join("");
+   $("clist").querySelectorAll("button").forEach(b => b.onclick = () => chooseCountry(b.dataset.geo));
+   status(t("ready"));
++  LAYERS.onUpdate({ world: [y0, y1] });  // layers: world burned area
+ }
+ function geoBox(name) {  // bbox of the largest polygon, so island chains don't span the globe
+   const f = WORLD.features.find(x => x.properties.name === name);
+@@ -686,15 +696,24 @@
+   const xs = big[0].map(c => c[0]), ys = big[0].map(c => c[1]);
+   return [Math.min(...ys), Math.max(...ys), Math.min(...xs), Math.max(...xs)];
+ }
++function panelRight() {
++  const P = $("panel"), open = !P.classList.contains("collapsed");
++  return innerWidth > 760 && open ? Math.min(P.offsetWidth + 40, innerWidth / 2) : 40;
++}
++function onRegion(r) {  // layers: a province or department was clicked
++  if (!SEL) { status(`${r.name} · ${t("noDataFor")($("search").value)}`, true); return; }
++  document.querySelector("input[value=region]").checked = true; syncMode(); update();
++}
+ function flyToBox([s, n, w, e]) {
+   const P = $("panel"), open = !P.classList.contains("collapsed"), wide = innerWidth > 760;
+-  const right = wide && open ? Math.min(P.offsetWidth + 40, innerWidth / 2) : 40;
++  const right = panelRight();
+   const bottom = !wide && open ? Math.min(P.offsetHeight + 20, innerHeight / 2) : 40;
+   // flyTo arc: pulls back to show the globe, turns it, then zooms into the country
+   map.fitBounds([[w, s], [e, n]], { padding: { top: 40, bottom, left: 60, right }, duration: 3200, curve: 1.6, maxZoom: 6.5, essential: true });
+ }
+ function chooseCountry(name) {
+   const key = BY_GEO[name];
++  LAYERS.onCountry(name);  // layers: load this country's boundaries
+   map.setFilter("sel-line", ["==", ["get", "name"], name]);
+   const box = key ? COUNTRIES[key].box : geoBox(name);
+   if (box) flyToBox(box);
+@@ -725,6 +744,7 @@
+   $("d0").max = $("d1").max = LAST; if (!userDates) $("d1").value = LAST;
+   document.body.classList.remove("has-country", "ar"); $("country").value = "";
+   map.setFilter("sel-line", ["==", ["get", "name"], ""]);
++  LAYERS.onCountry(null);  // layers
+   map.flyTo({ zoom: 1.6, duration: 2200, essential: true });
+   renderMethod(); update();
+ }
+@@ -768,7 +788,7 @@
+ // ---------------------------------------------------------------- boot
+ document.querySelectorAll("input[name=mode]").forEach(r => r.onchange = () => { syncMode(); map.getSource("aoi").setData(aoiGeojson()); if (mode() === "country") update(); });
+ $("run").onclick = () => { if (SEL && mode() === "bbox") setBbox(+$("s").value, +$("n").value, +$("w").value, +$("e").value); update(); };
+-$("lang").onclick = () => { lang = lang === "en" ? "es" : "en"; applyI18n(); projCtrl?.label(); renderMethod(); if (!SEL) renderGlobal(); else if (lastRows.length) render(); };
++$("lang").onclick = () => { lang = lang === "en" ? "es" : "en"; applyI18n(); projCtrl?.label(); LAYERS.applyText(); renderMethod(); if (!SEL) renderGlobal(); else if (lastRows.length) render(); };
+ $("method-open").onclick = () => $("method").showModal();
+ $("method-close").onclick = () => $("method").close();
+ $("global-btn").onclick = goWorld;
+@@ -788,7 +808,7 @@
+ 
+ (async () => {
+   try {
+-    const [world] = await Promise.all([fetch("data/ref/countries.geojson").then(r => r.json()), loadGlobal(),
++    const [world] = await Promise.all([fetch("data/ref/countries.geojson").then(r => r.json()), loadGlobal(), LAYERS.loadIndex(),
+       ...Object.keys(COUNTRIES).map(async k => { METAS[k] = await (await fetch(dir(k) + "meta.json")).json(); })]);
+     WORLD = world;
+     $("country-list").innerHTML = WORLD.features.map(f => f.properties.name).sort().map(n => `<option value="${n}">`).join("");
+--- web/index.html	2026-11-16 01:59:48.401232000 +0000
++++ web/index.html	2026-11-16 02:19:16.018266107 +0000
+@@ -33,7 +33,9 @@
+       <label><input type="radio" name="mode" value="bbox"><span data-i18n="bbox">Bounding box</span></label>
+       <label><input type="radio" name="mode" value="radius"><span data-i18n="pointRadius">Point + radius</span></label>
+       <label><input type="radio" name="mode" value="poly"><span data-i18n="polygon">Polygon</span></label>
++      <label><input type="radio" name="mode" value="region"><span data-lt="region">Province / dept.</span></label>
+     </div>
++    <div class="tb-group mode-region needs-country"><span class="hint" data-lt="regionHint">Turn on a boundary layer and click a province or department.</span></div>
+ 
+     <div class="tb-group mode-bbox needs-country">
+       <label class="mini"><span data-i18n="south">South lat</span><input id="s" type="number" step="0.01"></label>
+--- web/style.css	2026-11-16 01:59:48.460839000 +0000
++++ web/style.css	2026-11-16 02:43:07.430274494 +0000
+@@ -169,3 +169,22 @@
+ /* Square corners everywhere; only the round logo and search icon keep curves */
+ *, *::before, *::after, .maplibregl-ctrl-group, .maplibregl-popup-content, .maplibregl-ctrl-attrib { border-radius: 0 !important; }
+ .logo, .search-ico { border-radius: 50% !important; }
++
++/* ---- v8: layer control, burned-area legend, province mode */
++.toolbar .mode-region { display: none; }
++.toolbar[data-mode="region"] .mode-region { display: flex; align-self: center; }
++.mode-region .hint { margin: 0; }
++.layer-ctrl { background: var(--panel); border: 1px solid var(--line); color: var(--ink); font-size: .78rem; min-width: 190px; }
++.layer-ctrl .lc-head { width: 100%; text-align: left; background: transparent; border: 0; border-bottom: 1px solid var(--line);
++  font-weight: 600; padding: .35rem .6rem; }
++.layer-ctrl.collapsed .lc-body { display: none; }
++.layer-ctrl.collapsed .lc-head { border-bottom: 0; }
++.lc-body { display: flex; flex-direction: column; gap: .2rem; padding: .4rem .6rem .5rem; }
++.lc-body label { display: flex; align-items: center; gap: .4rem; cursor: pointer; white-space: nowrap; }
++.lc-body input { margin: 0; accent-color: #8ab4f8; }
++.lc-sub { padding-left: 1.2rem; display: flex; flex-direction: column; gap: .15rem; color: var(--muted); }
++.lc-note { margin: .2rem 0 0; color: var(--muted); font-size: .72rem; max-width: 190px; white-space: normal; }
++.legend-burn { bottom: 112px; }
++.ramp-burn { background: linear-gradient(90deg, #dfe4f0, #b6c7e0, #8fb0d4, #5f95c4, #3a78b0, #1d5f95, #0b4a7a, #023858); }
++@media (max-width: 760px) { .legend-burn { top: 84px; bottom: auto; } .layer-ctrl { min-width: 0; } }
++.card.loading { opacity: .35; transition: opacity .2s; }

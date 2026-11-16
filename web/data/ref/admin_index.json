@@ -1,0 +1,1732 @@
+{
+"Afghanistan": {
+"a3": "AFG",
+"iso3": "AFG",
+"adm1": "admin1/AFG.geojson",
+"adm1_n": 34,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Albania": {
+"a3": "ALB",
+"iso3": "ALB",
+"adm1": "admin1/ALB.geojson",
+"adm1_n": 12,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Algeria": {
+"a3": "DZA",
+"iso3": "DZA",
+"adm1": "admin1/DZA.geojson",
+"adm1_n": 48,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"American Samoa": {
+"a3": "ASM",
+"iso3": "ASM",
+"adm1": "admin1/ASM.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Andorra": {
+"a3": "AND",
+"iso3": "AND",
+"adm1": "admin1/AND.geojson",
+"adm1_n": 7,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Angola": {
+"a3": "AGO",
+"iso3": "AGO",
+"adm1": "admin1/AGO.geojson",
+"adm1_n": 18,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Anguilla": {
+"a3": "AIA",
+"iso3": "AIA",
+"adm1": "admin1/AIA.geojson",
+"adm1_n": 15,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Antarctica": {
+"a3": "ATA",
+"iso3": "ATA",
+"adm1": "admin1/ATA.geojson",
+"adm1_n": 2,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Antigua and Barb.": {
+"a3": "ATG",
+"iso3": "ATG",
+"adm1": "admin1/ATG.geojson",
+"adm1_n": 8,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Argentina": {
+"a3": "ARG",
+"iso3": "ARG",
+"adm1": "admin1/ARG.geojson",
+"adm1_n": 24,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/ARG.geojson",
+"adm2_n": 525,
+"adm2_label": "departments",
+"adm2_source": "geoBoundaries gbOpen ADM2 (Instituto Geografico Nacional and UNHCR, OCHA ROLAC), build Dec 12, 2023",
+"adm2_license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)"
+},
+"Armenia": {
+"a3": "ARM",
+"iso3": "ARM",
+"adm1": "admin1/ARM.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Aruba": {
+"a3": "ABW",
+"iso3": "ABW",
+"adm1": "admin1/ABW.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Ashmore and Cartier Is.": {
+"a3": "ATC",
+"iso3": "AUS",
+"adm1": "admin1/ATC.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Australia": {
+"a3": "AUS",
+"iso3": "AUS",
+"adm1": "admin1/AUS.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/AUS.geojson",
+"adm2_n": 547,
+"adm2_label": "Local Government Areas",
+"adm2_source": "geoBoundaries gbOpen ADM2 (Australian Bureau of Statistics), build Dec 12, 2023",
+"adm2_license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+},
+"Austria": {
+"a3": "AUT",
+"iso3": "AUT",
+"adm1": "admin1/AUT.geojson",
+"adm1_n": 9,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Azerbaijan": {
+"a3": "AZE",
+"iso3": "AZE",
+"adm1": "admin1/AZE.geojson",
+"adm1_n": 78,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Bahamas": {
+"a3": "BHS",
+"iso3": "BHS",
+"adm1": "admin1/BHS.geojson",
+"adm1_n": 30,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Bahrain": {
+"a3": "BHR",
+"iso3": "BHR",
+"adm1": "admin1/BHR.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Bangladesh": {
+"a3": "BGD",
+"iso3": "BGD",
+"adm1": "admin1/BGD.geojson",
+"adm1_n": 7,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Barbados": {
+"a3": "BRB",
+"iso3": "BRB",
+"adm1": "admin1/BRB.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Belarus": {
+"a3": "BLR",
+"iso3": "BLR",
+"adm1": "admin1/BLR.geojson",
+"adm1_n": 7,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Belgium": {
+"a3": "BEL",
+"iso3": "BEL",
+"adm1": "admin1/BEL.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Belize": {
+"a3": "BLZ",
+"iso3": "BLZ",
+"adm1": "admin1/BLZ.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Benin": {
+"a3": "BEN",
+"iso3": "BEN",
+"adm1": "admin1/BEN.geojson",
+"adm1_n": 12,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Bermuda": {
+"a3": "BMU",
+"iso3": "BMU",
+"adm1": "admin1/BMU.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Bhutan": {
+"a3": "BTN",
+"iso3": "BTN",
+"adm1": "admin1/BTN.geojson",
+"adm1_n": 20,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Bolivia": {
+"a3": "BOL",
+"iso3": "BOL",
+"adm1": "admin1/BOL.geojson",
+"adm1_n": 9,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Bosnia and Herz.": {
+"a3": "BIH",
+"iso3": "BIH",
+"adm1": "admin1/BIH.geojson",
+"adm1_n": 18,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Botswana": {
+"a3": "BWA",
+"iso3": "BWA",
+"adm1": "admin1/BWA.geojson",
+"adm1_n": 15,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Br. Indian Ocean Ter.": {
+"a3": "IOT",
+"iso3": "IOT",
+"adm1": "admin1/IOT.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Brazil": {
+"a3": "BRA",
+"iso3": "BRA",
+"adm1": "admin1/BRA.geojson",
+"adm1_n": 27,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/BRA.geojson",
+"adm2_n": 5570,
+"adm2_label": "municipality",
+"adm2_source": "geoBoundaries gbOpen ADM2 (Instituto Brasileiro de Geografia e Estatística (IBGE), OCHA ROLAC), build Dec 12, 2023",
+"adm2_license": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)"
+},
+"British Virgin Is.": {
+"a3": "VGB",
+"iso3": "VGB",
+"adm1": "admin1/VGB.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Brunei": {
+"a3": "BRN",
+"iso3": "BRN",
+"adm1": "admin1/BRN.geojson",
+"adm1_n": 4,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Bulgaria": {
+"a3": "BGR",
+"iso3": "BGR",
+"adm1": "admin1/BGR.geojson",
+"adm1_n": 28,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Burkina Faso": {
+"a3": "BFA",
+"iso3": "BFA",
+"adm1": "admin1/BFA.geojson",
+"adm1_n": 45,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Burundi": {
+"a3": "BDI",
+"iso3": "BDI",
+"adm1": "admin1/BDI.geojson",
+"adm1_n": 17,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Cabo Verde": {
+"a3": "CPV",
+"iso3": "CPV",
+"adm1": "admin1/CPV.geojson",
+"adm1_n": 22,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Cambodia": {
+"a3": "KHM",
+"iso3": "KHM",
+"adm1": "admin1/KHM.geojson",
+"adm1_n": 24,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Cameroon": {
+"a3": "CMR",
+"iso3": "CMR",
+"adm1": "admin1/CMR.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Canada": {
+"a3": "CAN",
+"iso3": "CAN",
+"adm1": "admin1/CAN.geojson",
+"adm1_n": 13,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/CAN.geojson",
+"adm2_n": 76,
+"adm2_label": "Divisions",
+"adm2_source": "geoBoundaries gbOpen ADM2 (Statistics Canada (StatCan)), build Dec 12, 2023",
+"adm2_license": "Open Government Canada 2.0"
+},
+"Cayman Is.": {
+"a3": "CYM",
+"iso3": "CYM",
+"adm1": "admin1/CYM.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Central African Rep.": {
+"a3": "CAF",
+"iso3": "CAF",
+"adm1": "admin1/CAF.geojson",
+"adm1_n": 17,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Chad": {
+"a3": "TCD",
+"iso3": "TCD",
+"adm1": "admin1/TCD.geojson",
+"adm1_n": 22,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Chile": {
+"a3": "CHL",
+"iso3": "CHL",
+"adm1": "admin1/CHL.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"China": {
+"a3": "CHN",
+"iso3": "CHN",
+"adm1": "admin1/CHN.geojson",
+"adm1_n": 32,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Colombia": {
+"a3": "COL",
+"iso3": "COL",
+"adm1": "admin1/COL.geojson",
+"adm1_n": 34,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Comoros": {
+"a3": "COM",
+"iso3": "COM",
+"adm1": "admin1/COM.geojson",
+"adm1_n": 3,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Congo": {
+"a3": "COG",
+"iso3": "COG",
+"adm1": "admin1/COG.geojson",
+"adm1_n": 12,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Cook Is.": {
+"a3": "COK",
+"iso3": "COK",
+"adm1": "admin1/COK.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Costa Rica": {
+"a3": "CRI",
+"iso3": "CRI",
+"adm1": "admin1/CRI.geojson",
+"adm1_n": 7,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Croatia": {
+"a3": "HRV",
+"iso3": "HRV",
+"adm1": "admin1/HRV.geojson",
+"adm1_n": 21,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Cuba": {
+"a3": "CUB",
+"iso3": "CUB",
+"adm1": "admin1/CUB.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Curaçao": {
+"a3": "CUW",
+"iso3": "CUW",
+"adm1": "admin1/CUW.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Cyprus": {
+"a3": "CYP",
+"iso3": "CYP",
+"adm1": "admin1/CYP.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Czechia": {
+"a3": "CZE",
+"iso3": "CZE",
+"adm1": "admin1/CZE.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Côte d'Ivoire": {
+"a3": "CIV",
+"iso3": "CIV",
+"adm1": "admin1/CIV.geojson",
+"adm1_n": 19,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Dem. Rep. Congo": {
+"a3": "COD",
+"iso3": "COD",
+"adm1": "admin1/COD.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Denmark": {
+"a3": "DNK",
+"iso3": "DNK",
+"adm1": "admin1/DNK.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Djibouti": {
+"a3": "DJI",
+"iso3": "DJI",
+"adm1": "admin1/DJI.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Dominica": {
+"a3": "DMA",
+"iso3": "DMA",
+"adm1": "admin1/DMA.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Dominican Rep.": {
+"a3": "DOM",
+"iso3": "DOM",
+"adm1": "admin1/DOM.geojson",
+"adm1_n": 32,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Ecuador": {
+"a3": "ECU",
+"iso3": "ECU",
+"adm1": "admin1/ECU.geojson",
+"adm1_n": 24,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Egypt": {
+"a3": "EGY",
+"iso3": "EGY",
+"adm1": "admin1/EGY.geojson",
+"adm1_n": 27,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"El Salvador": {
+"a3": "SLV",
+"iso3": "SLV",
+"adm1": "admin1/SLV.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Eq. Guinea": {
+"a3": "GNQ",
+"iso3": "GNQ",
+"adm1": "admin1/GNQ.geojson",
+"adm1_n": 7,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Eritrea": {
+"a3": "ERI",
+"iso3": "ERI",
+"adm1": "admin1/ERI.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Estonia": {
+"a3": "EST",
+"iso3": "EST",
+"adm1": "admin1/EST.geojson",
+"adm1_n": 15,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Ethiopia": {
+"a3": "ETH",
+"iso3": "ETH",
+"adm1": "admin1/ETH.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Faeroe Is.": {
+"a3": "FRO",
+"iso3": "FRO",
+"adm1": "admin1/FRO.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Falkland Is.": {
+"a3": "FLK",
+"iso3": "FLK",
+"adm1": "admin1/FLK.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Fiji": {
+"a3": "FJI",
+"iso3": "FJI",
+"adm1": "admin1/FJI.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Finland": {
+"a3": "FIN",
+"iso3": "FIN",
+"adm1": "admin1/FIN.geojson",
+"adm1_n": 18,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Fr. Polynesia": {
+"a3": "PYF",
+"iso3": "PYF",
+"adm1": "admin1/PYF.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Fr. S. Antarctic Lands": {
+"a3": "ATF",
+"iso3": "ATF",
+"adm1": "admin1/ATF.geojson",
+"adm1_n": 4,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"France": {
+"a3": "FRA",
+"iso3": "FRA",
+"adm1": "admin1/FRA.geojson",
+"adm1_n": 101,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Gabon": {
+"a3": "GAB",
+"iso3": "GAB",
+"adm1": "admin1/GAB.geojson",
+"adm1_n": 9,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Gambia": {
+"a3": "GMB",
+"iso3": "GMB",
+"adm1": "admin1/GMB.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Georgia": {
+"a3": "GEO",
+"iso3": "GEO",
+"adm1": "admin1/GEO.geojson",
+"adm1_n": 12,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Germany": {
+"a3": "DEU",
+"iso3": "DEU",
+"adm1": "admin1/DEU.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Ghana": {
+"a3": "GHA",
+"iso3": "GHA",
+"adm1": "admin1/GHA.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Greece": {
+"a3": "GRC",
+"iso3": "GRC",
+"adm1": "admin1/GRC.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/GRC.geojson",
+"adm2_n": 14,
+"adm2_label": "Unknown",
+"adm2_source": "geoBoundaries gbOpen ADM2 (EuroGeoGraphics, Regional IM Working Group - Europe), build Dec 12, 2023",
+"adm2_license": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+},
+"Greenland": {
+"a3": "GRL",
+"iso3": "GRL",
+"adm1": "admin1/GRL.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Grenada": {
+"a3": "GRD",
+"iso3": "GRD",
+"adm1": "admin1/GRD.geojson",
+"adm1_n": 7,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Guam": {
+"a3": "GUM",
+"iso3": "GUM",
+"adm1": "admin1/GUM.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Guatemala": {
+"a3": "GTM",
+"iso3": "GTM",
+"adm1": "admin1/GTM.geojson",
+"adm1_n": 22,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Guernsey": {
+"a3": "GGY",
+"iso3": "GGY",
+"adm1": "admin1/GGY.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Guinea": {
+"a3": "GIN",
+"iso3": "GIN",
+"adm1": "admin1/GIN.geojson",
+"adm1_n": 34,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Guinea-Bissau": {
+"a3": "GNB",
+"iso3": "GNB",
+"adm1": "admin1/GNB.geojson",
+"adm1_n": 9,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Guyana": {
+"a3": "GUY",
+"iso3": "GUY",
+"adm1": "admin1/GUY.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Haiti": {
+"a3": "HTI",
+"iso3": "HTI",
+"adm1": "admin1/HTI.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Heard I. and McDonald Is.": {
+"a3": "HMD",
+"iso3": "HMD",
+"adm1": "admin1/HMD.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Honduras": {
+"a3": "HND",
+"iso3": "HND",
+"adm1": "admin1/HND.geojson",
+"adm1_n": 18,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Hong Kong": {
+"a3": "HKG",
+"iso3": "HKG",
+"adm1": "admin1/HKG.geojson",
+"adm1_n": 18,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Hungary": {
+"a3": "HUN",
+"iso3": "HUN",
+"adm1": "admin1/HUN.geojson",
+"adm1_n": 43,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Iceland": {
+"a3": "ISL",
+"iso3": "ISL",
+"adm1": "admin1/ISL.geojson",
+"adm1_n": 9,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"India": {
+"a3": "IND",
+"iso3": "IND",
+"adm1": "admin1/IND.geojson",
+"adm1_n": 36,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Indian Ocean Ter.": {
+"a3": "IOA",
+"iso3": "AUS",
+"adm1": "admin1/IOA.geojson",
+"adm1_n": 2,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Indonesia": {
+"a3": "IDN",
+"iso3": "IDN",
+"adm1": "admin1/IDN.geojson",
+"adm1_n": 33,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Iran": {
+"a3": "IRN",
+"iso3": "IRN",
+"adm1": "admin1/IRN.geojson",
+"adm1_n": 31,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Iraq": {
+"a3": "IRQ",
+"iso3": "IRQ",
+"adm1": "admin1/IRQ.geojson",
+"adm1_n": 18,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Ireland": {
+"a3": "IRL",
+"iso3": "IRL",
+"adm1": "admin1/IRL.geojson",
+"adm1_n": 34,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Isle of Man": {
+"a3": "IMN",
+"iso3": "IMN",
+"adm1": "admin1/IMN.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Israel": {
+"a3": "ISR",
+"iso3": "ISR",
+"adm1": "admin1/ISR.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Italy": {
+"a3": "ITA",
+"iso3": "ITA",
+"adm1": "admin1/ITA.geojson",
+"adm1_n": 110,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/ITA.geojson",
+"adm2_n": 20,
+"adm2_label": "Unknown",
+"adm2_source": "geoBoundaries gbOpen ADM2 (ISTAT, National Institute of Statistics), build Dec 12, 2023",
+"adm2_license": "Creative Commons Attribution 3.0 License"
+},
+"Jamaica": {
+"a3": "JAM",
+"iso3": "JAM",
+"adm1": "admin1/JAM.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Japan": {
+"a3": "JPN",
+"iso3": "JPN",
+"adm1": "admin1/JPN.geojson",
+"adm1_n": 47,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Jersey": {
+"a3": "JEY",
+"iso3": "JEY",
+"adm1": "admin1/JEY.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Jordan": {
+"a3": "JOR",
+"iso3": "JOR",
+"adm1": "admin1/JOR.geojson",
+"adm1_n": 12,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Kazakhstan": {
+"a3": "KAZ",
+"iso3": "KAZ",
+"adm1": "admin1/KAZ.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Kenya": {
+"a3": "KEN",
+"iso3": "KEN",
+"adm1": "admin1/KEN.geojson",
+"adm1_n": 8,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Kiribati": {
+"a3": "KIR",
+"iso3": "KIR",
+"adm1": "admin1/KIR.geojson",
+"adm1_n": 2,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Kosovo": {
+"a3": "KOS",
+"iso3": "-99",
+"adm1": "admin1/KOS.geojson",
+"adm1_n": 30,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Kuwait": {
+"a3": "KWT",
+"iso3": "KWT",
+"adm1": "admin1/KWT.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Kyrgyzstan": {
+"a3": "KGZ",
+"iso3": "KGZ",
+"adm1": "admin1/KGZ.geojson",
+"adm1_n": 8,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Laos": {
+"a3": "LAO",
+"iso3": "LAO",
+"adm1": "admin1/LAO.geojson",
+"adm1_n": 17,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Latvia": {
+"a3": "LVA",
+"iso3": "LVA",
+"adm1": "admin1/LVA.geojson",
+"adm1_n": 119,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Lebanon": {
+"a3": "LBN",
+"iso3": "LBN",
+"adm1": "admin1/LBN.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Lesotho": {
+"a3": "LSO",
+"iso3": "LSO",
+"adm1": "admin1/LSO.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Liberia": {
+"a3": "LBR",
+"iso3": "LBR",
+"adm1": "admin1/LBR.geojson",
+"adm1_n": 15,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Libya": {
+"a3": "LBY",
+"iso3": "LBY",
+"adm1": "admin1/LBY.geojson",
+"adm1_n": 22,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Liechtenstein": {
+"a3": "LIE",
+"iso3": "LIE",
+"adm1": "admin1/LIE.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Lithuania": {
+"a3": "LTU",
+"iso3": "LTU",
+"adm1": "admin1/LTU.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Luxembourg": {
+"a3": "LUX",
+"iso3": "LUX",
+"adm1": "admin1/LUX.geojson",
+"adm1_n": 3,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Macao": {
+"a3": "MAC",
+"iso3": "MAC",
+"adm1": "admin1/MAC.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Madagascar": {
+"a3": "MDG",
+"iso3": "MDG",
+"adm1": "admin1/MDG.geojson",
+"adm1_n": 22,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Malawi": {
+"a3": "MWI",
+"iso3": "MWI",
+"adm1": "admin1/MWI.geojson",
+"adm1_n": 28,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Malaysia": {
+"a3": "MYS",
+"iso3": "MYS",
+"adm1": "admin1/MYS.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Maldives": {
+"a3": "MDV",
+"iso3": "MDV",
+"adm1": "admin1/MDV.geojson",
+"adm1_n": 21,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Mali": {
+"a3": "MLI",
+"iso3": "MLI",
+"adm1": "admin1/MLI.geojson",
+"adm1_n": 9,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Malta": {
+"a3": "MLT",
+"iso3": "MLT",
+"adm1": "admin1/MLT.geojson",
+"adm1_n": 68,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Marshall Is.": {
+"a3": "MHL",
+"iso3": "MHL",
+"adm1": "admin1/MHL.geojson",
+"adm1_n": 2,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Mauritania": {
+"a3": "MRT",
+"iso3": "MRT",
+"adm1": "admin1/MRT.geojson",
+"adm1_n": 13,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Mauritius": {
+"a3": "MUS",
+"iso3": "MUS",
+"adm1": "admin1/MUS.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Mexico": {
+"a3": "MEX",
+"iso3": "MEX",
+"adm1": "admin1/MEX.geojson",
+"adm1_n": 33,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Micronesia": {
+"a3": "FSM",
+"iso3": "FSM",
+"adm1": "admin1/FSM.geojson",
+"adm1_n": 4,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Moldova": {
+"a3": "MDA",
+"iso3": "MDA",
+"adm1": "admin1/MDA.geojson",
+"adm1_n": 40,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Monaco": {
+"a3": "MCO",
+"iso3": "MCO",
+"adm1": "admin1/MCO.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Mongolia": {
+"a3": "MNG",
+"iso3": "MNG",
+"adm1": "admin1/MNG.geojson",
+"adm1_n": 22,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Montenegro": {
+"a3": "MNE",
+"iso3": "MNE",
+"adm1": "admin1/MNE.geojson",
+"adm1_n": 21,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Montserrat": {
+"a3": "MSR",
+"iso3": "MSR",
+"adm1": "admin1/MSR.geojson",
+"adm1_n": 3,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Morocco": {
+"a3": "MAR",
+"iso3": "MAR",
+"adm1": "admin1/MAR.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Mozambique": {
+"a3": "MOZ",
+"iso3": "MOZ",
+"adm1": "admin1/MOZ.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Myanmar": {
+"a3": "MMR",
+"iso3": "MMR",
+"adm1": "admin1/MMR.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"N. Cyprus": {
+"a3": "CYN",
+"iso3": "-99",
+"adm1": "admin1/CYN.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"N. Mariana Is.": {
+"a3": "MNP",
+"iso3": "MNP",
+"adm1": "admin1/MNP.geojson",
+"adm1_n": 4,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Namibia": {
+"a3": "NAM",
+"iso3": "NAM",
+"adm1": "admin1/NAM.geojson",
+"adm1_n": 13,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Nauru": {
+"a3": "NRU",
+"iso3": "NRU",
+"adm1": "admin1/NRU.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Nepal": {
+"a3": "NPL",
+"iso3": "NPL",
+"adm1": "admin1/NPL.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Netherlands": {
+"a3": "NLD",
+"iso3": "NLD",
+"adm1": "admin1/NLD.geojson",
+"adm1_n": 15,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"New Caledonia": {
+"a3": "NCL",
+"iso3": "NCL",
+"adm1": "admin1/NCL.geojson",
+"adm1_n": 3,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"New Zealand": {
+"a3": "NZL",
+"iso3": "NZL",
+"adm1": "admin1/NZL.geojson",
+"adm1_n": 24,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Nicaragua": {
+"a3": "NIC",
+"iso3": "NIC",
+"adm1": "admin1/NIC.geojson",
+"adm1_n": 17,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Niger": {
+"a3": "NER",
+"iso3": "NER",
+"adm1": "admin1/NER.geojson",
+"adm1_n": 8,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Nigeria": {
+"a3": "NGA",
+"iso3": "NGA",
+"adm1": "admin1/NGA.geojson",
+"adm1_n": 37,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Niue": {
+"a3": "NIU",
+"iso3": "NIU",
+"adm1": "admin1/NIU.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Norfolk Island": {
+"a3": "NFK",
+"iso3": "NFK",
+"adm1": "admin1/NFK.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"North Korea": {
+"a3": "PRK",
+"iso3": "PRK",
+"adm1": "admin1/PRK.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Norway": {
+"a3": "NOR",
+"iso3": "NOR",
+"adm1": "admin1/NOR.geojson",
+"adm1_n": 21,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Oman": {
+"a3": "OMN",
+"iso3": "OMN",
+"adm1": "admin1/OMN.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Pakistan": {
+"a3": "PAK",
+"iso3": "PAK",
+"adm1": "admin1/PAK.geojson",
+"adm1_n": 8,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Palau": {
+"a3": "PLW",
+"iso3": "PLW",
+"adm1": "admin1/PLW.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Palestine": {
+"a3": "PSX",
+"iso3": "PSE",
+"adm1": "admin1/PSX.geojson",
+"adm1_n": 2,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Panama": {
+"a3": "PAN",
+"iso3": "PAN",
+"adm1": "admin1/PAN.geojson",
+"adm1_n": 12,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Papua New Guinea": {
+"a3": "PNG",
+"iso3": "PNG",
+"adm1": "admin1/PNG.geojson",
+"adm1_n": 20,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Paraguay": {
+"a3": "PRY",
+"iso3": "PRY",
+"adm1": "admin1/PRY.geojson",
+"adm1_n": 18,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Peru": {
+"a3": "PER",
+"iso3": "PER",
+"adm1": "admin1/PER.geojson",
+"adm1_n": 26,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Philippines": {
+"a3": "PHL",
+"iso3": "PHL",
+"adm1": "admin1/PHL.geojson",
+"adm1_n": 118,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Pitcairn Is.": {
+"a3": "PCN",
+"iso3": "PCN",
+"adm1": "admin1/PCN.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Poland": {
+"a3": "POL",
+"iso3": "POL",
+"adm1": "admin1/POL.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Portugal": {
+"a3": "PRT",
+"iso3": "PRT",
+"adm1": "admin1/PRT.geojson",
+"adm1_n": 20,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/PRT.geojson",
+"adm2_n": 311,
+"adm2_label": "gbOpen",
+"adm2_source": "geoBoundaries gbOpen ADM2 (Wikipedia), build Feb 21, 2024",
+"adm2_license": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
+},
+"Puerto Rico": {
+"a3": "PRI",
+"iso3": "PRI",
+"adm1": "admin1/PRI.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Qatar": {
+"a3": "QAT",
+"iso3": "QAT",
+"adm1": "admin1/QAT.geojson",
+"adm1_n": 7,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Romania": {
+"a3": "ROU",
+"iso3": "ROU",
+"adm1": "admin1/ROU.geojson",
+"adm1_n": 42,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Russia": {
+"a3": "RUS",
+"iso3": "RUS",
+"adm1": "admin1/RUS.geojson",
+"adm1_n": 86,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Rwanda": {
+"a3": "RWA",
+"iso3": "RWA",
+"adm1": "admin1/RWA.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"S. Geo. and the Is.": {
+"a3": "SGS",
+"iso3": "SGS",
+"adm1": "admin1/SGS.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"S. Sudan": {
+"a3": "SDS",
+"iso3": "SSD",
+"adm1": "admin1/SDS.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Saint Helena": {
+"a3": "SHN",
+"iso3": "SHN",
+"adm1": "admin1/SHN.geojson",
+"adm1_n": 3,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Saint Lucia": {
+"a3": "LCA",
+"iso3": "LCA",
+"adm1": "admin1/LCA.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Samoa": {
+"a3": "WSM",
+"iso3": "WSM",
+"adm1": "admin1/WSM.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"San Marino": {
+"a3": "SMR",
+"iso3": "SMR",
+"adm1": "admin1/SMR.geojson",
+"adm1_n": 9,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Saudi Arabia": {
+"a3": "SAU",
+"iso3": "SAU",
+"adm1": "admin1/SAU.geojson",
+"adm1_n": 13,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Senegal": {
+"a3": "SEN",
+"iso3": "SEN",
+"adm1": "admin1/SEN.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Serbia": {
+"a3": "SRB",
+"iso3": "SRB",
+"adm1": "admin1/SRB.geojson",
+"adm1_n": 25,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Seychelles": {
+"a3": "SYC",
+"iso3": "SYC",
+"adm1": "admin1/SYC.geojson",
+"adm1_n": 26,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Siachen Glacier": {
+"a3": "KAS",
+"iso3": "-99",
+"adm1": "admin1/KAS.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Sierra Leone": {
+"a3": "SLE",
+"iso3": "SLE",
+"adm1": "admin1/SLE.geojson",
+"adm1_n": 4,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Singapore": {
+"a3": "SGP",
+"iso3": "SGP",
+"adm1": "admin1/SGP.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Sint Maarten": {
+"a3": "SXM",
+"iso3": "SXM",
+"adm1": "admin1/SXM.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Slovakia": {
+"a3": "SVK",
+"iso3": "SVK",
+"adm1": "admin1/SVK.geojson",
+"adm1_n": 8,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Slovenia": {
+"a3": "SVN",
+"iso3": "SVN",
+"adm1": "admin1/SVN.geojson",
+"adm1_n": 193,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Solomon Is.": {
+"a3": "SLB",
+"iso3": "SLB",
+"adm1": "admin1/SLB.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Somalia": {
+"a3": "SOM",
+"iso3": "SOM",
+"adm1": "admin1/SOM.geojson",
+"adm1_n": 13,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Somaliland": {
+"a3": "SOL",
+"iso3": "-99",
+"adm1": "admin1/SOL.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"South Africa": {
+"a3": "ZAF",
+"iso3": "ZAF",
+"adm1": "admin1/ZAF.geojson",
+"adm1_n": 9,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"South Korea": {
+"a3": "KOR",
+"iso3": "KOR",
+"adm1": "admin1/KOR.geojson",
+"adm1_n": 17,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Spain": {
+"a3": "ESP",
+"iso3": "ESP",
+"adm1": "admin1/ESP.geojson",
+"adm1_n": 52,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/ESP.geojson",
+"adm2_n": 52,
+"adm2_label": "Province",
+"adm2_source": "geoBoundaries gbOpen ADM2 (El Instituto Nacional de Estadstica), build Dec 12, 2023",
+"adm2_license": "National Institute of Statistics (INE) Data License"
+},
+"Sri Lanka": {
+"a3": "LKA",
+"iso3": "LKA",
+"adm1": "admin1/LKA.geojson",
+"adm1_n": 25,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"St-Barthélemy": {
+"a3": "BLM",
+"iso3": "BLM",
+"adm1": "admin1/BLM.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"St-Martin": {
+"a3": "MAF",
+"iso3": "MAF",
+"adm1": "admin1/MAF.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"St. Kitts and Nevis": {
+"a3": "KNA",
+"iso3": "KNA",
+"adm1": "admin1/KNA.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"St. Pierre and Miquelon": {
+"a3": "SPM",
+"iso3": "SPM",
+"adm1": "admin1/SPM.geojson",
+"adm1_n": 2,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"St. Vin. and Gren.": {
+"a3": "VCT",
+"iso3": "VCT",
+"adm1": "admin1/VCT.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Sudan": {
+"a3": "SDN",
+"iso3": "SDN",
+"adm1": "admin1/SDN.geojson",
+"adm1_n": 17,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Suriname": {
+"a3": "SUR",
+"iso3": "SUR",
+"adm1": "admin1/SUR.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Sweden": {
+"a3": "SWE",
+"iso3": "SWE",
+"adm1": "admin1/SWE.geojson",
+"adm1_n": 21,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Switzerland": {
+"a3": "CHE",
+"iso3": "CHE",
+"adm1": "admin1/CHE.geojson",
+"adm1_n": 26,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Syria": {
+"a3": "SYR",
+"iso3": "SYR",
+"adm1": "admin1/SYR.geojson",
+"adm1_n": 15,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"São Tomé and Principe": {
+"a3": "STP",
+"iso3": "STP",
+"adm1": "admin1/STP.geojson",
+"adm1_n": 2,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Taiwan": {
+"a3": "TWN",
+"iso3": "TWN",
+"adm1": "admin1/TWN.geojson",
+"adm1_n": 21,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Tajikistan": {
+"a3": "TJK",
+"iso3": "TJK",
+"adm1": "admin1/TJK.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Tanzania": {
+"a3": "TZA",
+"iso3": "TZA",
+"adm1": "admin1/TZA.geojson",
+"adm1_n": 30,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Thailand": {
+"a3": "THA",
+"iso3": "THA",
+"adm1": "admin1/THA.geojson",
+"adm1_n": 77,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Timor-Leste": {
+"a3": "TLS",
+"iso3": "TLS",
+"adm1": "admin1/TLS.geojson",
+"adm1_n": 13,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Togo": {
+"a3": "TGO",
+"iso3": "TGO",
+"adm1": "admin1/TGO.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Tonga": {
+"a3": "TON",
+"iso3": "TON",
+"adm1": "admin1/TON.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Trinidad and Tobago": {
+"a3": "TTO",
+"iso3": "TTO",
+"adm1": "admin1/TTO.geojson",
+"adm1_n": 16,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Tunisia": {
+"a3": "TUN",
+"iso3": "TUN",
+"adm1": "admin1/TUN.geojson",
+"adm1_n": 23,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Turkey": {
+"a3": "TUR",
+"iso3": "TUR",
+"adm1": "admin1/TUR.geojson",
+"adm1_n": 81,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/TUR.geojson",
+"adm2_n": 973,
+"adm2_label": "Districts",
+"adm2_source": "geoBoundaries gbOpen ADM2 (OpenStreetMap, OSM Boundaries), build Dec 12, 2023",
+"adm2_license": "Open Data Commons Open Database License 1.0"
+},
+"Turkmenistan": {
+"a3": "TKM",
+"iso3": "TKM",
+"adm1": "admin1/TKM.geojson",
+"adm1_n": 5,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Turks and Caicos Is.": {
+"a3": "TCA",
+"iso3": "TCA",
+"adm1": "admin1/TCA.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"U.S. Virgin Is.": {
+"a3": "VIR",
+"iso3": "VIR",
+"adm1": "admin1/VIR.geojson",
+"adm1_n": 3,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Uganda": {
+"a3": "UGA",
+"iso3": "UGA",
+"adm1": "admin1/UGA.geojson",
+"adm1_n": 112,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Ukraine": {
+"a3": "UKR",
+"iso3": "UKR",
+"adm1": "admin1/UKR.geojson",
+"adm1_n": 25,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"United Arab Emirates": {
+"a3": "ARE",
+"iso3": "ARE",
+"adm1": "admin1/ARE.geojson",
+"adm1_n": 9,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"United Kingdom": {
+"a3": "GBR",
+"iso3": "GBR",
+"adm1": "admin1/GBR.geojson",
+"adm1_n": 232,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"United States of America": {
+"a3": "USA",
+"iso3": "USA",
+"adm1": "admin1/USA.geojson",
+"adm1_n": 51,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)",
+"adm2": "admin2/USA.geojson",
+"adm2_n": 3233,
+"adm2_label": "Counties",
+"adm2_source": "geoBoundaries gbOpen ADM2 (United States Census Bureau, MAF/TIGER Database), build Dec 12, 2023",
+"adm2_license": "Public Domain"
+},
+"Uruguay": {
+"a3": "URY",
+"iso3": "URY",
+"adm1": "admin1/URY.geojson",
+"adm1_n": 19,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Uzbekistan": {
+"a3": "UZB",
+"iso3": "UZB",
+"adm1": "admin1/UZB.geojson",
+"adm1_n": 14,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Vanuatu": {
+"a3": "VUT",
+"iso3": "VUT",
+"adm1": "admin1/VUT.geojson",
+"adm1_n": 6,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Vatican": {
+"a3": "VAT",
+"iso3": "VAT",
+"adm1": "admin1/VAT.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Venezuela": {
+"a3": "VEN",
+"iso3": "VEN",
+"adm1": "admin1/VEN.geojson",
+"adm1_n": 26,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Vietnam": {
+"a3": "VNM",
+"iso3": "VNM",
+"adm1": "admin1/VNM.geojson",
+"adm1_n": 63,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"W. Sahara": {
+"a3": "SAH",
+"iso3": "ESH",
+"adm1": "admin1/SAH.geojson",
+"adm1_n": 1,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Wallis and Futuna Is.": {
+"a3": "WLF",
+"iso3": "WLF",
+"adm1": "admin1/WLF.geojson",
+"adm1_n": 3,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Yemen": {
+"a3": "YEM",
+"iso3": "YEM",
+"adm1": "admin1/YEM.geojson",
+"adm1_n": 21,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Zambia": {
+"a3": "ZMB",
+"iso3": "ZMB",
+"adm1": "admin1/ZMB.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Zimbabwe": {
+"a3": "ZWE",
+"iso3": "ZWE",
+"adm1": "admin1/ZWE.geojson",
+"adm1_n": 10,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"eSwatini": {
+"a3": "SWZ",
+"iso3": "SWZ",
+"adm1": "admin1/SWZ.geojson",
+"adm1_n": 4,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+},
+"Åland": {
+"a3": "ALD",
+"iso3": "ALA",
+"adm1": "admin1/ALD.geojson",
+"adm1_n": 11,
+"adm1_source": "Natural Earth 1:10m admin-1 (public domain)"
+}
+}
